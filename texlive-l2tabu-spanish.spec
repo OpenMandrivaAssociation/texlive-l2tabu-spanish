@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/l2tabu/spanish
+# catalog-date 2008-08-22 10:50:40 +0200
+# catalog-license pd
+# catalog-version 1.1
 Name:		texlive-l2tabu-spanish
 Version:	1.1
 Release:	1
@@ -23,6 +29,7 @@ usages.
 %doc %{_texmfdistdir}/doc/latex/l2tabu-spanish/README
 %doc %{_texmfdistdir}/doc/latex/l2tabu-spanish/l2tabues.pdf
 %doc %{_texmfdistdir}/doc/latex/l2tabu-spanish/l2tabues.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -33,3 +40,5 @@ usages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
