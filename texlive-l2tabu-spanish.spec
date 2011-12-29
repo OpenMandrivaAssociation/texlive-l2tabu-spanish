@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2tabu-spanish.do
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 A Spanish translation of the l2tabu practical guide to LaTeX2e
@@ -29,7 +27,6 @@ usages.
 %doc %{_texmfdistdir}/doc/latex/l2tabu-spanish/README
 %doc %{_texmfdistdir}/doc/latex/l2tabu-spanish/l2tabues.pdf
 %doc %{_texmfdistdir}/doc/latex/l2tabu-spanish/l2tabues.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -40,5 +37,3 @@ usages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
