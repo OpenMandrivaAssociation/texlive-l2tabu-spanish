@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Spanish translation of "Obsolete packages and commands"
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/l2tabu/spanish
+URL:		https://www.ctan.org/tex-archive/info/l2tabu/spanish
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2tabu-spanish.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2tabu-spanish.doc.r%{version}.tar.xz
